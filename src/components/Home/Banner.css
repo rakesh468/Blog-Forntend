@@ -1,0 +1,21 @@
+.image{
+    background: url("https://i.pinimg.com/474x/f1/c3/72/f1c3721c4ed7bac97255d288aa3e7080.jpg")center/55% repeat-x #000;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    
+}
+.child1{
+    font-size: 50px;
+    color: white;
+    line-height: 1;
+}
+.child2{
+    font-size: 20px;
+    color: white;
+}

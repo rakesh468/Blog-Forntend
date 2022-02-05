@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 243, 243);
+    color:black;
+   
+}
+.container > *{
+    padding: 20px;
+}
+.link{
+    text-decoration: none;
+     color: inherit;
+}

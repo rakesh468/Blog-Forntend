@@ -1,0 +1,39 @@
+.post-container {
+  height: min-content;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #d3cede;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-transform: none;
+  transition: transform 100ms ease-in;
+}
+.post-container:hover {
+  transform: scale(1.02);
+}
+.post-container > * {
+  padding: 0 7px 7px 7px;
+}
+.post-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.text {
+  font-size: 14px;
+  color: #878787;
+}
+.details {
+  font-size: 18px;
+  word-break: break-word;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  text-overflow: "";
+}
+@media (max-width: 600px) {
+  .post-image {
+    height: 500px;
+  }
+}

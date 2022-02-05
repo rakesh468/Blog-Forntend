@@ -1,0 +1,32 @@
+.main{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(243, 236, 236);
+    height: 100vh;
+    
+}
+.sub-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 410px;
+    width: 350px;
+    box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
+    padding-top: 30px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 30px;
+    border: 2px solid black;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+header{
+    font-size:20px;
+    font-weight: bolder;
+}
