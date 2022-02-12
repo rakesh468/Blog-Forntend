@@ -8,9 +8,7 @@ function Banner() {
   return (
       <Box className="image">
           <Typography className="child1">BLOG  WORLD</Typography>
-          <Typography className="child2">PROGRAMING SKILL</Typography>
-    
-    </Box>
+          </Box>
   )
 }
 

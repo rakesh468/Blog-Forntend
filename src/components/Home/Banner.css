@@ -11,11 +11,7 @@
     
 }
 .child1{
-    font-size: 50px;
+    font-size: 2rem;
     color: white;
     line-height: 1;
-}
-.child2{
-    font-size: 20px;
-    color: white;
 }
