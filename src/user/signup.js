@@ -74,7 +74,7 @@ function Signup() {
       headers: { "Content-Type": "application/json" },
     }).then((response)=>{
       if(response.status===200){
-        setMsg({Message:"Login Successfully",status:"success"});
+        setMsg({Message:"User Created Successfully",status:"success"});
         setOpen(true);
         setTimeout(()=>history.push("/login"),3000);
       }else{
