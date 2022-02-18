@@ -11,5 +11,9 @@
 }
 .link{
     text-decoration: none;
-     color: inherit;
+    font-size: 15px;
+    color: black;
+}
+Link{
+    color: red;
 }

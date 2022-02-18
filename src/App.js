@@ -11,6 +11,8 @@ import CreateView from './Post/CreateView';
 import EditViews from './Post/EditViews';
 import Login from "./user/login";
 import Signup from "./user/signup"
+import { Contact } from './components/Home/Contact';
+import { About } from './components/Home/About';
 
 
 function App() {
@@ -37,6 +39,10 @@ function App() {
       <Route exact path="/create">
         <CreateView/>
         </Route>
+        <Route exact path="/contact">
+          <Contact/>
+          </Route>
+          <Route exact path="/about"><About/></Route>
       </Switch>
       </Box>
      
