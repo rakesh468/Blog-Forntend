@@ -18,7 +18,8 @@ function Details() {
     const [data,setdata]=useState({})
     useEffect(()=>{
         fetch(`${API_URL}/blogs/${id}`,{
-            method:"GET"
+            method:"GET",
+            headers:{"X-auth-token":localStorage.getItem('token')},
         })
         .then((data)=>data.json())
         .then((dt)=>setdata(dt))
@@ -26,7 +27,8 @@ function Details() {
 
     const deleteblog=(_id)=>{
         fetch(`${API_URL}/blogs/${_id}`,{
-            method:"DELETE"
+            method:"DELETE",
+            headers:{"X-auth-token":localStorage.getItem('token')},
         }).then(()=>history.push("/"))
     }
   return (

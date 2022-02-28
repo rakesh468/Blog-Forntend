@@ -11,11 +11,11 @@ const formvalidationSchema = yup.object({
   title: yup.string().required("Title Required"),
   poster: yup.string().required("URL Required"),
   summary: yup.string().required("Description Required"),
-  author:yup.string().required("Author Name Required"),
-  date:yup.string().required("Date Required")
+  author: yup.string().required("Author Name Required"),
+  date: yup.string().required("Date Required"),
 });
 
-const API_URL="https://blog-backendcode.herokuapp.com"
+const API_URL = "https://blog-backendcode.herokuapp.com";
 function EditViews() {
   const { id } = useParams();
   const [blog, setblog] = useState(null);
@@ -23,6 +23,7 @@ function EditViews() {
   useEffect(() => {
     fetch(`${API_URL}/blogs/${id}`, {
       method: "GET",
+      headers:{"X-auth-token":localStorage.getItem('token'),}
     })
       .then((data) => data.json())
       .then((dt) => setblog(dt));
@@ -54,7 +55,10 @@ function Updateblog({ blog }) {
     fetch(`${API_URL}/blogs/${blog._id}`, {
       method: "PUT",
       body: JSON.stringify(updatedblog),
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "X-auth-token": localStorage.getItem("token"),
+        "Content-Type": "application/json",
+      },
     }).then(() => history.push("/"));
   };
   return (
