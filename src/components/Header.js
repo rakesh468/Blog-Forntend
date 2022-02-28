@@ -8,14 +8,12 @@ function Header() {
   return (
     <AppBar className="header">
       <Toolbar className="container">
-        <Link to="/" className="link">
+        <Link to="/" className="link">HOME</Link>
+        <Link to="/blogs" className="link">
           {" "}
-          HOME
+          BLOGS
         </Link>
-        <Link to="/contact" className="link">
-          CONTACT
-        </Link>
-        <Link to="/about" className="link">
+       <Link to="/about" className="link">
           ABOUT
         </Link>
         <Link to="/login" className="link">
