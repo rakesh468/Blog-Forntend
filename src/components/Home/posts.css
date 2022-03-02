@@ -26,11 +26,11 @@
   color: #878787;
 }
 .details {
-  font-size: 18px;
+  font-size: 17px;
   word-break: break-word;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
-  text-overflow: "";
+  
 }
 @media (max-width: 600px) {
   .post-image {

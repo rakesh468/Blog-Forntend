@@ -72,7 +72,7 @@ function Login() {
         localStorage.setItem('token',response.token);
         setMsg({Message:"Login Successfully",status:"success"});
         setOpen(true);
-        setTimeout(()=>history.push("/"),3000);
+        setTimeout(()=>history.push("/blogs"),3000);
       })
        .catch((err)=>{
          setMsg({message:"error",status:"error"});
@@ -81,7 +81,7 @@ function Login() {
        }
   return (
     <div className="main">
-      <div className="sub-main">
+      <div className="sub-main-1">
         <form onSubmit={handleSubmit} >
           <header>Login</header>
           <br />

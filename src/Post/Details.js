@@ -29,7 +29,7 @@ function Details() {
         fetch(`${API_URL}/blogs/${_id}`,{
             method:"DELETE",
             headers:{"X-auth-token":localStorage.getItem('token')},
-        }).then(()=>history.push("/"))
+        }).then(()=>history.push("/blogs"))
     }
   return (
       <Box className="detail-container">
@@ -47,7 +47,7 @@ function Details() {
        </Box>
         <Typography>{data.summary}</Typography>
       
-      <Button onClick={()=>history.push("/")} variant="contained" size="small"><KeyboardBackspaceIcon/>BACK</Button>
+      <Button onClick={()=>history.push("/blogs")} variant="contained" size="small"><KeyboardBackspaceIcon/>BACK</Button>
       </Box>
   )
 }

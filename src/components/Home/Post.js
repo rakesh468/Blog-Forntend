@@ -14,7 +14,7 @@ function Post() {
   const getdata = () => {
     fetch(`${API_URL}/blogs`, {
       method: "GET",
-      headers: { "X-auth-token": localStorage.getItem("token") },
+     
     })
       .then((data) => data.json())
       .then((dt) => setdata(dt));

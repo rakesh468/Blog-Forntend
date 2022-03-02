@@ -59,7 +59,7 @@ function Updateblog({ blog }) {
         "X-auth-token": localStorage.getItem("token"),
         "Content-Type": "application/json",
       },
-    }).then(() => history.push("/"));
+    }).then(() => history.push("/blogs"));
   };
   return (
     <form className="cover-form" onSubmit={handleSubmit}>
